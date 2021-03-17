@@ -1,0 +1,30 @@
+BUS SYSTEMS
+Profibus-DP
+Physical layer: RS-485
+Topology: Trunk with drops
+Transmission rate (Speed): 9.6 K to 12 M bits/second
+Data transfer: max 246 bytes (input & output)
+Advantages: Capable of handling time critical functions with high-speed data access.
+
+Profibus-PA
+Physical layer: IEC 61158-2
+Topology: Trunk with branching
+Transmission rate (Speed): 31.25 Kbits/second
+Data transfer:
+Developed to connect directly into Profibus-DP .
+
+DeviceNet
+
+CANOpen
+
+Foundation Fieldbus H1
+
+Ethernet
+
+National Marine Electronics Association (NMEA)
+NMEA has 2 main protocols:
+a. NMEA 0183 is based on serial communication network. 
+It is common standard to manage electronic system input and output connection. 
+b. NMEA 2000 is controller area network (CAN) based technology.
+It is designed as a single cable (backbone) replaces most of the NMEA 0183 wiring interconnections and can handle data content between 50 to 100 NMEA 0183 data streams.
+
