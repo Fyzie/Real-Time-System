@@ -1,6 +1,6 @@
 BUS SYSTEMS
 Modbus
-Is a serial communication protocol.
+Is a serial communication protocol and master-slave type protocol.
 Has two types of Modbus frames which are Protocol Data Unit (PDU) containing function code and data, and Application Data Unit (ADU) containing additional address and error checking.
 Data format:
 Coil/Register
@@ -10,19 +10,23 @@ Numbers	Type	Table Name
 30001-39999	Read Only	Analog Input Registers
 40001-49999	Read-Write	Analog Output Holding Registers
 
+Modbus message speed: 9600 – 19200 baud rates.
 Has three common Modbus which are Modbus ASCII, Modbus RTU and Modbus TCP/IP.
 Modbus ASCII
-Based on serial communication.
-ASCII character to decode a message.
-Cannot communicate with RTU version.
-Modbus TCP/IP
-Based on Ethernet.
-Modbus RTU
-Use bytes for messages.
 Based on serial communication like RS485, RS422 and RS232.
 RS232 - Communication of two devices less than 50 feet.
 RS485/RS422 - Communication of two devices greater that 50 feet.
-Modbus message speed: 9600 – 19200 baud rates.
+ASCII character to encode/decode a message.
+Cannot communicate with RTU version.
+Modbus RTU
+Little variation from ASCII.
+Based on serial communication.
+Use bytes for messages.
+Modbus TCP/IP
+Based on Ethernet.
+Contain Modbus packet within TCP/IP packet.
+TCP/IP protocol for all messages.
+Slow for Ethernet industrial protocols, fast for monitoring applications.
 Advantages of Modbus:
 Modbus is simple to implement.
 Modbus is open protocol, so it does not require a specific media or physical layer.
@@ -31,14 +35,15 @@ Provide Additional sample code, implementation examples, and diagnostics are ava
 Suitable for small-to-medium volumes of data (<= 255 bytes).
 
 Profibus
-Profibus-DP
+ A master-slave protocol and allows multiple master.
+Profibus-DP (Decentralized Peripheral)
 Physical layer: RS-485
 Topology: Trunk with drops
 Transmission rate (Speed): 9.6 K to 12 M bits/second
 Data transfer: max 246 bytes (input & output)
 Advantages: Capable of handling time critical functions with high-speed data access.
 
-Profibus-PA
+Profibus-PA (Process Automation)
 Physical layer: IEC 61158-2
 Topology: Trunk with branching
 Transmission rate (Speed): 31.25 Kbits/second
