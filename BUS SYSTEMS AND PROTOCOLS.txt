@@ -54,12 +54,16 @@ Developed to connect directly into Profibus-DP.
 
 DeviceNet
 CANbus - Protocol that runs over Controller Area Network (CAN)
+Open Network Standard – specification and protocol are open.
+Two main purposes – 1) transport of control-oriented information associated with low-level devices and 2) transport of other information which is indirectly related to the system  being controlled (configuration)
 Transmission rate: 125k, 250k, 500k bit per second
 Topology: Straight with restricted drops
 Advantages of DeviceNet:
 Increase design flexibility – provides unlimited I/O ports by providing network cascading and offers instrument interoperability and ‘Plug and Play’ capabilities
 Improve process data management – affords Peer-to-Peer/ Master-Slave management
+
 CANOpen
+
 
 Foundation Fieldbus H1
 
