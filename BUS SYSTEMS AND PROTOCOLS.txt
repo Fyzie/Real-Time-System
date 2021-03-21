@@ -44,20 +44,21 @@ Profibus-DP (Decentralized Peripheral)
 Physical layer: RS-485
 Topology: Trunk with drops
 Transmission rate (Speed): 9.6 K to 12 M bits/second
-Data transfer: max 246 bytes (input & output)
 Advantages: Capable of handling time critical functions with high-speed data access.
 
 Profibus-PA (Process Automation)
 Physical layer: IEC 61158-2
 Topology: Trunk with branching
 Transmission rate (Speed): 31.25 Kbits/second
-Data transfer:
 Developed to connect directly into Profibus-DP.
 
 DeviceNet
-Application-level protocol used in automation environment.
-
-
+CANbus - Protocol that runs over Controller Area Network (CAN)
+Transmission rate: 125k, 250k, 500k bit per second
+Topology: Straight with restricted drops
+Advantages of DeviceNet:
+Increase design flexibility – provides unlimited I/O ports by providing network cascading and offers instrument interoperability and ‘Plug and Play’ capabilities
+Improve process data management – affords Peer-to-Peer/ Master-Slave management
 CANOpen
 
 Foundation Fieldbus H1
