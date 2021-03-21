@@ -12,16 +12,19 @@ Numbers	Type	Table Name
 
 Modbus message speed: 9600 – 19200 baud rates.
 Has three common Modbus which are Modbus ASCII, Modbus RTU and Modbus TCP/IP.
+
 Modbus ASCII
 Based on serial communication like RS485, RS422 and RS232.
 RS232 - Communication of two devices less than 50 feet.
 RS485/RS422 - Communication of two devices greater that 50 feet.
 ASCII character to encode/decode a message.
 Cannot communicate with RTU version.
+
 Modbus RTU
 Little variation from ASCII.
 Based on serial communication.
 Use bytes for messages.
+
 Modbus TCP/IP
 Based on Ethernet.
 Contain Modbus packet within TCP/IP packet.
@@ -36,6 +39,7 @@ Suitable for small-to-medium volumes of data (<= 255 bytes).
 
 Profibus
  A master-slave protocol and allows multiple master.
+
 Profibus-DP (Decentralized Peripheral)
 Physical layer: RS-485
 Topology: Trunk with drops
