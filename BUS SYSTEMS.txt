@@ -1,4 +1,35 @@
 BUS SYSTEMS
+Modbus
+Is a serial communication protocol.
+Has two types of Modbus frames which are Protocol Data Unit (PDU) containing function code and data, and Application Data Unit (ADU) containing additional address and error checking.
+Data format:
+Coil/Register
+Numbers	Type	Table Name
+1-9999	Read-Write	Discrete Output Coils
+10001-19999	Read Only	Discrete Input Contacts
+30001-39999	Read Only	Analog Input Registers
+40001-49999	Read-Write	Analog Output Holding Registers
+
+Has three common Modbus which are Modbus ASCII, Modbus RTU and Modbus TCP/IP.
+Modbus ASCII
+Based on serial communication.
+ASCII character to decode a message.
+Cannot communicate with RTU version.
+Modbus TCP/IP
+Based on Ethernet.
+Modbus RTU
+Use bytes for messages.
+Based on serial communication like RS485, RS422 and RS232.
+RS232 - Communication of two devices less than 50 feet.
+RS485/RS422 - Communication of two devices greater that 50 feet.
+Modbus message speed: 9600 – 19200 baud rates.
+Advantages of Modbus:
+Modbus is simple to implement.
+Modbus is open protocol, so it does not require a specific media or physical layer.
+The specification is available for free. and there are licensing fees. 
+Provide Additional sample code, implementation examples, and diagnostics are available on the Modbus toolkit.
+Suitable for small-to-medium volumes of data (<= 255 bytes).
+
 Profibus
 Profibus-DP
 Physical layer: RS-485
@@ -19,35 +50,6 @@ DeviceNet
 CANOpen
 
 Foundation Fieldbus H1
-
-Modbus
-Is a serial communication protocol.
-Has two types of Modbus frames which are Protocol Data Unit (PDU) containing function code and data, and Application Data Unit (ADU) containing additional address and error checking.
-Data format:
-Coil/Register
-Numbers	Type	Table Name
-1-9999	Read-Write	Discrete Output Coils
-10001-19999	Read Only	Discrete Input Contacts
-30001-39999	Read Only	Analog Input Registers
-40001-49999	Read-Write	Analog Output Holding Registers
-
-Has three common Modbus which are Modbus ASCII, Modbus RTU and Modbus TCP/IP.
-Modbus ASCII
-ASCII character to decode a message.
-Cannot communicate with RTU version.
-Modbus TCP/IP
-Based on Ethernet.
-Modbus RTU
-Based on serial communication like RS485, RS422 and RS232.
-RS232 - Communication of two devices less than 50 feet.
-RS485/RS422 - Communication of two devices greater that 50 feet.
-Modbus message speed: 9600 – 19200 baud rates.
-Advantages of Modbus:
-Modbus is simple to implement.
-Modbus is open protocol, so it does not require a specific media or physical layer.
-The specification is available for free. and there are licensing fees. 
-Provide Additional sample code, implementation examples, and diagnostics are available on the Modbus toolkit.
-Suitable for small-to-medium volumes of data (<= 255 bytes).
 
 Ethernet
 
