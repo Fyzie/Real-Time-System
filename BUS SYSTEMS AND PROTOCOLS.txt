@@ -1,4 +1,4 @@
-BUS SYSTEMS
+BUS SYSTEMS AND PROTOCOLS
 Modbus
 Is a serial communication protocol and master-slave type protocol.
 Has two types of Modbus frames which are Protocol Data Unit (PDU) containing function code and data, and Application Data Unit (ADU) containing additional address and error checking.
@@ -51,6 +51,8 @@ Data transfer:
 Developed to connect directly into Profibus-DP.
 
 DeviceNet
+Application-level protocol used in automation environment.
+
 
 CANOpen
 
