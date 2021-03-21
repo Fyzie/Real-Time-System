@@ -12,7 +12,7 @@ Physical layer: IEC 61158-2
 Topology: Trunk with branching
 Transmission rate (Speed): 31.25 Kbits/second
 Data transfer:
-Developed to connect directly into Profibus-DP .
+Developed to connect directly into Profibus-DP.
 
 DeviceNet
 
@@ -38,10 +38,13 @@ Cannot communicate with RTU version.
 Modbus TCP/IP
 Based on Ethernet.
 Modbus RTU
-Based on serial communication.
-Advantages:
+Based on serial communication like RS485, RS422 and RS232.
+RS232 - Communication of two devices less than 50 feet.
+RS485/RS422 - Communication of two devices greater that 50 feet.
+Modbus message speed: 9600 – 19200 baud rates.
+Advantages of Modbus:
 Modbus is simple to implement.
-Modbus is open protocol, so it does not require a specific media or physical Layer.
+Modbus is open protocol, so it does not require a specific media or physical layer.
 The specification is available for free. and there are licensing fees. 
 Provide Additional sample code, implementation examples, and diagnostics are available on the Modbus toolkit.
 Suitable for small-to-medium volumes of data (<= 255 bytes).
