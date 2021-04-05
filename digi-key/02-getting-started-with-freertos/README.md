@@ -3,6 +3,8 @@
 
 <img src="media/2leds-circuit.jpeg" height="400">  
 
+![](media/2leds-circuit.gif)  
+
 </p>
 </details>
   
