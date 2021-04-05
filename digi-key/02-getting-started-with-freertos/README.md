@@ -3,8 +3,6 @@
 
 <img src="media/2leds-circuit.jpeg" height="400">  
 
-![](https://user-images.githubusercontent.com/76240694/113548710-99e66600-9622-11eb-85ea-fb84bac69baa.mp4)  
-
 </p>
 </details>
   
