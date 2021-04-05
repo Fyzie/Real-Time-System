@@ -1,7 +1,10 @@
 <details><summary>Blinky 2 LEDs</summary>
 <p>
 
-<img src="media/2leds-circuit.jpeg" width="300" height="300">  
+<img src="media/2leds-circuit.jpeg" height="400">  
+
+</p>
+</details>
   
 <details><summary>Issue</summary>
 <p>  
