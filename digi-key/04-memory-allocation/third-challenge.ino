@@ -31,7 +31,7 @@ void readSerial(void *parameters) {
       // Store received character to buffer if not over buffer limit
       if (idx < input_limit + 1) {
         input[idx] = c;
-        Serial.println(input[idx]);
+        //Serial.println(input[idx]);
         idx++;
       }
 
@@ -89,9 +89,11 @@ void setup() {
 
   Serial.begin(115200);
 
-  vTaskDelay(1000 / portTICK_PERIOD_MS);
+  vTaskDelay(2000 / portTICK_PERIOD_MS);
   Serial.println();
   Serial.println("---FreeRTOS Heap Demo---");
+  Serial.print("Limit printed input: ");
+  Serial.println(input_limit);
   Serial.println("Enter a string");
 
   // Start Serial receive task
