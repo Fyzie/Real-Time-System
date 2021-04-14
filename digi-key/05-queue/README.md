@@ -1,6 +1,6 @@
 # Demo Queue  
   
-#### Delay on receiving task has lower rate: Queue full occurs
+#### Delay on receiving task has slower rate: Queue full occurs
 
 <img src="https://user-images.githubusercontent.com/76240694/114626418-4345ef80-9ce6-11eb-9a2d-03ecd6bb5fdd.gif" width="500"> 
 
