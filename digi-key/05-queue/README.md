@@ -1,10 +1,24 @@
 # Demo Queue  
   
-#### Delay on receiving task has slower rate: Queue full occurs
+#### Delay on receiving task has slower rate: Queue full occurs 
+Line 28:  
+`//Delay 1 : should be faster rate than delay 2 to avoid queue full`  
+`//        : another word, this delay number should be smaller than delay 2`  
+`vTaskDelay(1000 / portTICK_PERIOD_MS);`  
+Line 64:  
+`//Delay 2`  
+`vTaskDelay(500 / portTICK_PERIOD_MS);`  
 
 <img src="https://user-images.githubusercontent.com/76240694/114626418-4345ef80-9ce6-11eb-9a2d-03ecd6bb5fdd.gif" width="500"> 
 
 #### Delay on receiving task has faster rate: No queue full  
+Line 28:  
+`//Delay 1 : should be faster rate than delay 2 to avoid queue full`  
+`//        : another word, this delay number should be smaller than delay 2`  
+`vTaskDelay(500 / portTICK_PERIOD_MS);`  
+Line 64:  
+`//Delay 2`  
+`vTaskDelay(1000 / portTICK_PERIOD_MS);`  
 
 <img src="https://user-images.githubusercontent.com/76240694/114626666-9f107880-9ce6-11eb-9ac3-85cb28e6860b.gif" width="500">
 
