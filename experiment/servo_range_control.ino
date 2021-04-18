@@ -18,7 +18,7 @@ Servo myservo;
 static int range = 0;    // range rotation
 static int pos = 180;    // intial range
 
-void toggleLED(void *parameter) {
+void controlServo(void *parameter) {
   while (1) {
     for (pos = 0; pos <= range; pos++) {
     myservo.write(pos);
@@ -79,8 +79,8 @@ void setup() {
 
   // Start blink task
   xTaskCreate(  // Use xTaskCreate() in vanilla FreeRTOS
-    toggleLED,      // Function to be called
-    "Toggle LED",   // Name of task
+    controlServo,      // Function to be called
+    "Control Servo",   // Name of task
     1024,           // Stack size (bytes in ESP32, words in FreeRTOS)
     NULL,           // Parameter to pass
     1,              // Task priority
