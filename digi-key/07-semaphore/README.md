@@ -4,16 +4,7 @@
 
 # Solution Demo Counting Semaphore
 
-### declare these lines as critical section using Mutex (so that, it will be prioritized)
+### using Mutex to declare critical section(so that, required lines will be prioritized)
 
-`if (xSemaphoreTake(mutex, 0) == pdTRUE) {`  
-`// Print out message contents`  
-`Serial.print("Received: ");`  
-`Serial.print(msg.body);`  
-`Serial.print(" | len: ");`  
-`Serial.println(msg.len);`  
-`xSemaphoreGive(mutex);`  
-`}`  
-
-<img src="https://user-images.githubusercontent.com/76240694/117097558-928bb700-ad9e-11eb-86d1-eeac8cd299ab.png" width="500">
+<img src="https://user-images.githubusercontent.com/76240694/117101134-1bf3b700-ada8-11eb-9521-e98d415847fb.png" width="500">
 
