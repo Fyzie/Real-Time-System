@@ -30,14 +30,13 @@ void myTask(void *parameters) {
   xSemaphoreGive(sem_params);
 
   //make this as critical section using mutex (so that, it will prioritize this part first)
-  if (xSemaphoreTake(mutex, 0) == pdTRUE) {
-    // Print out message contents
-    Serial.print("Received: ");
-    Serial.print(msg.body);
-    Serial.print(" | len: ");
-    Serial.println(msg.len);
-    xSemaphoreGive(mutex);
-  }
+  xSemaphoreTake(mutex, portMAX_DELAY);
+  // Print out message contents
+  Serial.print("Received: ");
+  Serial.print(msg.body);
+  Serial.print(" | len: ");
+  Serial.println(msg.len);
+  xSemaphoreGive(mutex);
 
   // Wait for a while and delete self
   vTaskDelay(1000 / portTICK_PERIOD_MS);
@@ -70,7 +69,6 @@ void setup() {
   strcpy(msg.body, text);
   msg.len = strlen(text);
 
-
   // Start tasks
   for (int i = 0; i < num_tasks; i++) {
 
@@ -85,15 +83,13 @@ void setup() {
                             1,
                             NULL,
                             app_cpu);
-  }
-
-  // Wait for all tasks to read shared memory
-  for (int i = 0; i < num_tasks; i++) {
     xSemaphoreTake(sem_params, portMAX_DELAY);
   }
 
+  xSemaphoreTake(mutex, portMAX_DELAY);
   // Notify that all tasks have been created
   Serial.println("All tasks created");
+  xSemaphoreGive(mutex);
 }
 
 void loop() {
