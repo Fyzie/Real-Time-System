@@ -22,6 +22,5 @@
 
 <img src="https://user-images.githubusercontent.com/76240694/117228798-5d3da280-ae4c-11eb-8e57-7d3cc15f68e0.gif" width="500">
 
-
-
+# Sixth Challenge
 
