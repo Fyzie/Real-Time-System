@@ -1,1 +1,1 @@
-# Rocket Real-time Tracking & Telemetary
+# Rocket Realtime Tracking & Telemetary
