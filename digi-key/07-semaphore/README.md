@@ -20,5 +20,8 @@
 
 <img src="https://user-images.githubusercontent.com/76240694/117228638-06d06400-ae4c-11eb-8d58-187f006dc025.png" width="500">
 
-<img src="https://user-images.githubusercontent.com/76240694/117228647-09cb5480-ae4c-11eb-88f6-a0da911d8d40.mp4" width="500">
+<img src="https://user-images.githubusercontent.com/76240694/117228798-5d3da280-ae4c-11eb-8e57-7d3cc15f68e0.gif" width="500">
+
+
+
 
