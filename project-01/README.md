@@ -1,4 +1,4 @@
 # Rocket Realtime Tracking & Telemetary
-### Issues
+### Current issues
 1. Invalid data transmitted after several times
 2. Unstable data catch
